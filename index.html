@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <Title>Javascript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    #caixa{
+      border: 3px solid;
+      border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        border-image-slice: 1;
+      
+    }
+    #caixa div{
+      padding: 10px;
+      
+    }
+    #titulo{
+      background-color: lightgrey;
+      
+    }
+    a{
+      text-decoration: none;
+      color: dodgerblue;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: brown;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div id="caixa">
+    <div id="titulo">Javascript Lgbt <a href="#" onclick="exibir()"> saiba mais</a></div>
+    <div id="texto">Você já ouviu falar da comunidade LGBT+ em JavaScript? É uma mistura de cores vibrantes, com promessas de funcionalidades fabulosas! Mas cuidado, às vezes pode acontecer de você estar tentando fazer algo simples, e de repente se ver em um loop infinito de problemas. É como se você estivesse tentando sair do armário, mas sempre acabasse voltando para dentro da função! E não se esqueça dos eventos - na comunidade LGBT+ JavaScript, às vezes você pode acabar desencadeando um evento 'Drag and Drop' involuntário! Mas, no final do dia, é tudo sobre aceitar e abraçar a diversidade de expressão de código - porque, afinal, em JavaScript, todos os tipos são bem-vindos, desde que tenhamos funções e callbacks!</div>
+  </div>
+  <script>
+    document.getElementById("texto").style.display = "none";
+    function exibir(){
+      if (document.getElementById("texto").style.display == "none")
+        document.getElementById("texto").style.display = "block"
+      else{
+        document.getElementById("texto").style.display = "none"
+      }
+        
+    }
+  </script>
+</body>
+
+</html>
